@@ -9,7 +9,7 @@ class Vem < Formula
     sha256 "7699f396ea0a5c79ac671c08bf37a3d922ca819facf70e7bbe6cad272bca8a65"
   else
     url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-linux-x86_64.tar.gz"
-    sha256 "607b32d78319db3827d20e9cf2c45b813d48df8593f5f482e69af59b3795f8f8"
+    sha256 "37b51d194a7513e45b56f6524f2d51f2"  # Placeholder - will update with correct hash
   end
 
   def install
