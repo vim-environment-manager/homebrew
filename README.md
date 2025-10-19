@@ -7,7 +7,7 @@ This is the official Homebrew tap for VEM (Vim Environment Manager).
 Add the tap and install VEM:
 
 ```bash
-brew tap vim-environment-manager/tap
+brew tap vim-environment-manager/homebrew
 brew install vem
 ```
 
