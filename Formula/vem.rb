@@ -3,10 +3,10 @@ class Vem < Formula
   homepage "https://github.com/ryo-arima/vem"
   version "0.1.0"
   
-  # Use the correct release files from GitHub
+  # Use macOS compatible files (arm64 version should work on macOS)
   if Hardware::CPU.arm?
-    url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-0.1.0-202510191002-aarch64.tar.gz"
-    sha256 "7699f396ea0a5c79ac671c08bf37a3d922ca819facf70e7bbe6cad272bca8a65"
+    url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-0.1.0-202510191002-arm64.tar.gz"
+    sha256 "345dfd717c8077ac6d120022bb26cd4f0490db2d863797cf3a0494c63e0ab0e3"
   else
     url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-0.1.0-202510191002-x86_64.tar.gz"
     sha256 "607b32d78319db3827d20e9cf2c45b813d48df8593f5f482e69af59b3795f8f8"
