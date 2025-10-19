@@ -6,7 +6,7 @@ class Vem < Formula
   # Use generic Linux binaries which should work on macOS for Go applications
   if Hardware::CPU.arm?
     url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-linux-aarch64.tar.gz"
-    sha256 "7699f396ea0a5c79ac671c08bf37a3d922ca819facf70e7bbe6cad272bca8a65"
+    sha256 "e8602af085c911c8a6e0e1f3a769e458ba77da647f6d5ed0ef02be0542ad025d"
   else
     url "https://github.com/ryo-arima/vem/releases/download/v0.1.0-202510191002/vem-linux-x86_64.tar.gz"
     sha256 "37b51d194a7513e45b56f6524f2d51f2"  # Placeholder - will update with correct hash
