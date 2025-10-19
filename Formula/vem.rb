@@ -12,7 +12,32 @@ class Vem < Formula
   end
 
   def install
+    # Set executable permissions before installing
+    chmod 0755, "vem"
+    
+    # Install binary to Homebrew's bin directory
     bin.install "vem"
+    
+    # Ensure the binary is executable
+    chmod 0755, bin/"vem"
+  end
+
+  def caveats
+    <<~EOS
+      VEM has been installed to:
+        #{bin}/vem
+
+      To use VEM, make sure Homebrew's bin directory is in your PATH:
+        echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+        source ~/.zshrc
+
+      Or for bash users:
+        echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bash_profile
+        source ~/.bash_profile
+
+      Test your installation:
+        vem --version
+    EOS
   end
 
   test do
