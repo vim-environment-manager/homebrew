@@ -18,8 +18,8 @@ class Vem < Formula
     # Install binary to Homebrew's bin directory
     bin.install "vem"
     
-    # Ensure the binary is executable
-    chmod 0755, bin/"vem"
+    # Ensure the binary is executable after installation
+    system "chmod", "755", bin/"vem"
   end
 
   def caveats
